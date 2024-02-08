@@ -18,9 +18,9 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { db } from "../FirebaseConfig";
-import { collection, getDocs ,addDoc} from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import { TextInput } from "react-native-paper";
-
+import Tabs from "./Tabs";
 export default function Home(props) {
   const [users, setUsers] = useState([]);
   const [newName, setNewName] = useState("");
@@ -29,9 +29,8 @@ export default function Home(props) {
   const userCollectionRef = collection(db, "users");
 
   const createUser = async () => {
-    await addDoc(userCollectionRef , {name:newName , age:newAge});
-  }
-
+    await addDoc(userCollectionRef, { name: newName, age: newAge });
+  };
 
   useEffect(() => {
     const getUsers = async () => {
@@ -44,12 +43,18 @@ export default function Home(props) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text style={{ fontSize: 30 }}>home Screen</Text>
-      <Text style={{ fontSize: 10 }}>Name:{props.route.params.name}</Text>
-      <Text style={{ fontSize: 10 }}>Name:{props.route.params.age}</Text>
+      {/* <Text style={{ fontSize: 10 }}>Name:{props.route.params.name}</Text> */}
+      {/* <Text style={{ fontSize: 10 }}>Name:{props.route.params.age}</Text> */}
 
-      <TextInput onChangeText={(event)=>setNewName(event)} label="type name" />
-      <TextInput onChangeText={(event)=>setNewAge(event)} label="type Age" />
-      <Button onPress={createUser} title="create user"></Button>
+      <TextInput
+        onChangeText={(event) => setNewName(event)}
+        label="type name"
+      />
+      <TextInput onChangeText={(event) => setNewAge(event)} label="type Age" />
+      <Button
+        onPress={() => props.navigation.navigate("Tabs")}
+        title="create user"
+      ></Button>
 
       {users.map((user) => {
         return (

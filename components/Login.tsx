@@ -20,23 +20,42 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./Home";
 import { Avatar } from "react-native-paper";
 import { TextInput } from "react-native-paper";
+import Tabs from "./Tabs";
+import Homit from "./Homit"
 
 export default function Login(props) {
-  const [name, setName] = useState("");
-  const age = 29;
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{ fontSize: 30 }}>Login Screen</Text>
-      <Avatar.Image size={48} source={require("../assets/avatar.jpg")} />
+      <Text style={styles.head}>Login Your Credentials !!</Text>
+      {/* <Avatar.Image size={48} source={require("../assets/avatar.jpg")} /> */}
 
       <TextInput
-        onChangeText={(text) => setName(text)}
-        label="type name"
+        label="Enter username"
       />
-      <Button
-        title="navigate"
-        onPress={() => props.navigation.navigate("Home", { name, age })}
-      ></Button>
+      <TextInput
+        label="Enter Password"
+      />
+      <View style={styles.butt}>
+        <Button
+          title="Continue as Patient"
+
+          onPress={() => props.navigation.navigate("Homit")}
+        >
+
+        </Button>
+      </View>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  head: {
+    paddingBottom:20,
+    fontSize:25,
+    
+  },
+  butt: {
+    marginTop: 20,
+  },
+
+});
