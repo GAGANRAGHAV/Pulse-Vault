@@ -17,6 +17,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import Login from "./Login";
 import Preview from "./Preview";
 import Home from "./Home";
+import Homit from "./Homit";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -29,8 +30,8 @@ export default function Tabs(Props) {
       barStyle={{ backgroundColor: "#694fad" }}
     >
       <Tab.Screen
-        name="Login"
-        component={Login}
+        name="Homit"
+        component={Homit}
         options={{
           tabBarLabel: "Updates",
           tabBarIcon: ({ color }) => (
@@ -39,6 +40,8 @@ export default function Tabs(Props) {
         }}
       />
       <Tab.Screen name="Preview" component={Preview} />
+      <Tab.Screen name="Home" component={Home} />
+
     </Tab.Navigator>
   );
 }

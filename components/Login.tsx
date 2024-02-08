@@ -39,7 +39,7 @@ export default function Login(props) {
         <Button
           title="Continue as Patient"
 
-          onPress={() => props.navigation.navigate("Homit")}
+          onPress={() => props.navigation.navigate("Tabs")}
         >
 
         </Button>
