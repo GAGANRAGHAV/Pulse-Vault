@@ -9,6 +9,8 @@ import Login from './components/Login';
 import Preview from './components/Preview';
 import Tabs from './components/Tabs';
 import Homit from "./components/Homit"
+import History from './components/History';
+import Signup from './components/Signup';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -25,6 +27,7 @@ export default function App() {
 
       {/* <MainContainer/> */}
 
+      <Stack.Screen name='Signup' component={Signup}/>
 
 
       <Stack.Screen name='Login' component={Login}/>
@@ -32,6 +35,8 @@ export default function App() {
 
 
         <Stack.Screen name='Home' component={Home}/>
+        <Stack.Screen name='History' component={History}/>
+
         <Stack.Screen name='Tabs' component={Tabs}/>
 
 

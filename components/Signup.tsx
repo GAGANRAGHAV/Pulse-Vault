@@ -19,7 +19,7 @@ import { Avatar } from "react-native-paper";
 import { TextInput, Text } from "react-native-paper";
 import { Button } from 'react-native-paper';
 
-export default function Preview(props) {
+export default function Signup(props) {
   return (
     <View style={styles.box}>
       <Image
@@ -29,23 +29,43 @@ export default function Preview(props) {
 
       <Text style={styles.header} variant="displaySmall">PULSEVAULT</Text>
 
+
+      <Text style={styles.subheader} variant="titleMedium">Create your Pulsevault account</Text>
+
+      <Text style={styles.texit} variant="bodySmall">Pulsevault is a powerful electronic health record system that will keep your data secure and available.</Text>
+
+
+
+
+
       <View style={styles.butt}>
         <Button
-          icon="ambulance"
+          icon="login"
           mode="contained"
-          onPress={() => props.navigation.navigate("Signup")}
+          onPress={() => props.navigation.navigate("Login")}
         >
-Continue as Patient
-        </Button>
+SIGNUP        </Button>
       </View>
-      <Button icon="doctor" mode="contained" onPress={() => console.log('Pressed')}>
-    Continue as Admin
+      <Button  mode="outlined" onPress={() => console.log('Pressed')}>
+    LOGIN
   </Button>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+    texit:{
+        
+       
+        marginLeft:20,
+        marginRight:20,
+        marginBottom:50,
+    },
+    subheader:{
+        marginTop:50,
+        marginBottom:10,
+    fontWeight:'bold',
+    },
   tinyLogo:{
     marginBottom:30,
 

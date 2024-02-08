@@ -18,6 +18,7 @@ import Login from "./Login";
 import Preview from "./Preview";
 import Home from "./Home";
 import Homit from "./Homit";
+import History from "./History";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -39,7 +40,7 @@ export default function Tabs(Props) {
           ),
         }}
       />
-      <Tab.Screen name="Preview" component={Preview} />
+      <Tab.Screen name="History" component={History} />
       <Tab.Screen name="Home" component={Home} />
 
     </Tab.Navigator>
