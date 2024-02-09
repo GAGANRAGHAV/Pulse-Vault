@@ -22,42 +22,42 @@ import {
 
 
     return (
-      <List.Section title="Accordions">
+      <List.Section title="Patient's Details">
       <List.Accordion
-        title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        title="Radiology"
+        left={props => <List.Icon {...props} icon="heart" />}>
         <List.Item title="First item" />
         <List.Item title="Second item" />
       </List.Accordion>
 
       <List.Accordion
-        title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        title="Prescriptions"
+        left={props => <List.Icon {...props} icon="history" />}>
         <List.Item title="First item" />
         <List.Item title="Second item" />
       </List.Accordion>
 
       <List.Accordion
-        title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        title="Health Checkup Due"
+        left={props => <List.Icon {...props} icon="ambulance" />}>
         <List.Item title="First item" />
         <List.Item title="Second item" />
       </List.Accordion>
 
       <List.Accordion
-        title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        title="Insurance"
+        left={props => <List.Icon {...props} icon="doctor" />}>
         <List.Item title="First item" />
         <List.Item title="Second item" />
       </List.Accordion>
 
-      <List.Accordion
+      {/* <List.Accordion
         title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        left={props => <List.Icon {...props} icon="ambulance" />}>
         <List.Item title="First item" />
         <List.Item title="Second item" />
       </List.Accordion>
-      
+       */}
     </List.Section>
     )
   }

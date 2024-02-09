@@ -38,7 +38,11 @@ export default function Preview(props) {
 Continue as Patient
         </Button>
       </View>
-      <Button icon="doctor" mode="contained" onPress={() => console.log('Pressed')}>
+      <Button icon="doctor" mode="contained"
+      
+      onPress={() => props.navigation.navigate("Admin1")}
+       
+       >
     Continue as Admin
   </Button>
     </View>

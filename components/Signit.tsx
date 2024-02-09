@@ -22,27 +22,35 @@ import { TextInput, Button } from "react-native-paper";
 import Tabs from "./Tabs";
 import Homit from "./Homit"
 
-export default function Login(props) {
+export default function Signit(props) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={styles.head}>EnterYour Credentials !!</Text>
+      <Text style={styles.head}>Create Your Account !!</Text>
       {/* <Avatar.Image size={48} source={require("../assets/avatar.jpg")} /> */}
 
+      <TextInput
+        label="Enter Aadhar Card No."
+        style={styles.user}
+      />
       <TextInput
         label="Enter username"
         style={styles.user}
       />
       <TextInput
         label="Enter Password"
+        style={styles.user}
+      />
+      <TextInput
+        label="Confirm Password"
       />
       <View style={styles.butt}>
         
 
         <Button icon="login" mode="contained"
-          onPress={() => props.navigation.navigate("Tabs")}
+          onPress={() => props.navigation.navigate("Login")}
         
         >
-    LOGIN
+    SIGNUP
   </Button>
 
 
