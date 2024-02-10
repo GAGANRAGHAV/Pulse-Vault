@@ -1,4 +1,3 @@
-![Screenshot 2024-02-10 191609](https://github.com/GAGANRAGHAV/Pulse-Vault/assets/118094804/ad231a8f-eb51-4acf-8245-2450ab4cdb10)
 # Pulse Vault
 
 An App that provides a centralised system for storing and monitoring the healthcare data of the patients.
