@@ -57,7 +57,7 @@ PulseVault introduces a transformative approach to how health records are manage
   - Authentication: Firebase Authentication handles user authentication securely, allowing users to sign in with email/password, phone numbers, or third-party providers like Google or Facebook.
   - Real-time Database: Firebase Realtime Database provides a cloud-hosted NoSQL database, allowing you to store and sync data between your users' devices in real-time. This is crucial for PulseVault to provide real-time updates and notifications for health data changes.
   - Cloud Storage: Firebase Cloud Storage offers secure file uploads and downloads directly from mobile devices, ensuring that health records and related documents can be securely stored in the cloud.
-  - Analytics: Firebase Analytics provides insights into user behavior and app usage, allowing you to understand how users interact with PulseVault. This data can be used to improve the user experience and tailor features based on user needs.
+
 
 By incorporating Firebase into the technology stack, PulseVault gains additional functionalities such as secure authentication, real-time data synchronization, cloud storage, and analytics, making it a more comprehensive solution for healthcare data management.
 ## Installation
