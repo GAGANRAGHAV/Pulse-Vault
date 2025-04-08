@@ -62,7 +62,7 @@ PulseVault introduces a transformative approach to how health records are manage
 By incorporating Firebase into the technology stack, PulseVault gains additional functionalities such as secure authentication, real-time data synchronization, cloud storage, and analytics, making it a more comprehensive solution for healthcare data management.
 ## Installation
 
-To get started with PulseVault, clone the repository and install the dependencies:
+To get started with PulseVault, clone the repository and install the following dependencies:
 
 ```bash
 git clone https://github.com/yourusername/pulsevault.git
